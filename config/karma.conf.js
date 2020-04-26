@@ -53,7 +53,7 @@ module.exports = function(config) {
          */
         logLevel: config.LOG_INFO,
 
-        autoWatch: false,
+        autoWatch: true,
 
         browsers: [
             'Chrome'
@@ -66,7 +66,7 @@ module.exports = function(config) {
             }
         },
 
-        singleRun: true
+        singleRun: false
     };
 
     if (process.env.TRAVIS){
